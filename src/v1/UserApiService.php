@@ -93,8 +93,7 @@ class UserApiService {
 
             return null;
         } catch (GuzzleException $e) {
-            // Handle the HTTP request error, log it, or rethrow it as needed.
-            // You can also return a specific error response here.
+            echo 'Caught exception: ',  $e->getMessage(), "\n";
             return null;
         }
     }
